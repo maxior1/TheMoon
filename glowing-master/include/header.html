@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheMoon Beauty Care</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/dropdown.css">
+
+  <!-- 
+    - boxicon link
+  -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Free Shipping On All Thailand Orders $50+</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/imgs/logo-mm.png" width="260" height="26" alt="Glowing">
+        </a>
+
+        <div class="header-actions">
+
+        <a href="../all-products/login.php">
+          <button class="header-action-btn" aria-label="user" >
+            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+          </button>
+        </a>
+          
+        <a href="../all-products/cart.php">
+          <button class="header-action-btn" aria-label="cart item">
+            <!-- <data class="btn-text" value="0">$0.00</data> -->
+
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+        
+            <span class="btn-badge">0</span>
+          </button>
+        </a>
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="navbar-link has-after">Collection</a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#shop" class="navbar-link has-after">Shop</a>
+              <i class='bx bxs-chevron-down'></i>
+              <ul class="sub-menu">
+                <li><a href="../all-products/product.php"><span>All Products</span></a></li>
+                <li class="dropdown">
+                  <a href="#"><span>Category</span></a>
+                  <i class='bx bxs-chevron-down'></i>
+                  <ul class="sub-menu sub-menu-right">
+                    <li><a href="../all-products/product.php"><span>Face Care</span></a></li>
+                    <li><a href="../all-products/product.php"><span>Body Care</span></a></li>
+                    <li><a href="../all-products/product.php"><span>Hair Care</span></a></li>
+                    <li><a href="../all-products/product.php"><span>Perfume</span></a></li>
+                  </ul>
+                </li>
+                
+                
+              </ul>
+            </li>
+
+            <li>
+              <a href="#offer" class="navbar-link has-after">Promotion</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link has-after">Blog</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link has-after">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+  
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

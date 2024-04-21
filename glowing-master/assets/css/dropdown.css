@@ -1,0 +1,81 @@
+.header .navbar .dropdown {
+    position: relative;
+}
+.header .navbar > ul > li.dropdown > a {
+    padding-right: 20px;
+}
+.header .navbar i {
+    font-size: 15px;
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    color: black;
+    top: calc(50% - 8px);
+}
+.header .navbar > ul > li > i{
+    right: 0;
+}
+.header .navbar .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 230px;
+    padding: 15px 0;
+    background-color: rgb(255, 244, 206);
+    box-shadow: 0 0 5px hsl(0, 0%, 0%, 0.5);
+    z-index: 1;
+    transform-origin: top;
+    transform: scaleY(0); 
+    visibility: hidden; 
+    opacity: 0;
+}
+.header .navbar .sub-menu a {
+    padding: 6px 24px;
+}
+.header .navbar .sub-menu span {
+    color: black;
+    background-image: linear-gradient(hsl(0, 0%, 0%),hsl(0, 0%, 0%));
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.5s ease;
+}
+.header .navbar .sub-menu li:hover > a > span{
+    background-size: 100% 1px;
+}
+.header .navbar .sub-menu i{
+    transform: rotate(-90deg);
+    right: 24px;
+    
+}
+.header .navbar .sub-menu .dropdown >a {
+    padding-right: 34px;
+}
+/* ===================== The second navbar ============================= */
+.header .navbar .sub-menu-right {
+    left: 100%;
+    top: 0;
+
+} 
+.header .navbar li:hover > .sub-menu {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+/* ===================== Mobile navbar ============================= */
+@media(max-width:1200px){
+    .header .navbar .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+    }
+    .header.navbar >ul > li {
+        display: block;
+    }
+    .header.navbar >ul > li:not(:last-child) {
+        margin-right: 0;
+    }
+}
